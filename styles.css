@@ -1,0 +1,14 @@
+body{
+  padding: 25px;
+  background-color: #0c4716;
+}
+.title {
+	color: hsl(0, 0%, 100%);
+}
+.linked-in-icon img {  /* Assuming you have a class named "linked-in-icon" for the image */
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+  margin: 0;  /* Removes default margin */
+  padding: 0;  /* Removes default padding */
+}
