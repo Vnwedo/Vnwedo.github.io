@@ -15,41 +15,37 @@
       padding: 0;
     }
 
+    /* Responsive Header & Navigation */
     header, nav {
       width: 100%;
-      padding: 20px 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      box-sizing: border-box; /* Include padding in element's total width */
+      text-align: center; /* Center text within header and nav */
     }
 
     header {
-      top: 0;
+      background-color: rgba(255, 255, 255, 0.8); 
     }
 
     nav {
-      top: 60px;
+      background-color: rgba(255, 255, 255, 0.8);
     }
-
-    .title {
-      font-size: 2.5em;
+    
+    .title { /* Decreased font size */
+      font-size: 2em;
       color: rgb(31, 21, 124);
-      margin: 10px 0;
     }
 
     .subtitle {
-      font-size: 1.5em;
-      margin: 5px 0;
+      font-size: 1.2em;
     }
-
+   
     .navigation {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap; /* Allow items to wrap */
       justify-content: center;
     }
 
@@ -60,52 +56,36 @@
     .navigation a {
       text-decoration: none;
       color: rgb(0, 0, 0);
-      font-size: 1em;
+      font-size: 1em; 
       padding: 8px 12px;
     }
 
+    /* Main Content with Top Margin */
     main {
-      padding-top: 140px;
+      margin-top: 160px; /* Added top margin to prevent overlap */
+      /* ... (rest of your main content styles) ... */ 
     }
 
     /* Media Query for iPhone 14 Pro */
     @media (max-width: 390px) {
       header, nav {
-        padding: 10px 0; /* Reduced padding for smaller screens */
+        padding: 10px; 
       }
       .title {
-        font-size: 2em;  /* Smaller title */
+        font-size: 1.8em; 
       }
       .subtitle {
-        font-size: 1.2em; /* Smaller subtitle */
+        font-size: 1em; 
       }
       .navigation a {
-        font-size: 0.9em; /* Smaller navigation font */
+        font-size: 0.8em; 
       }
       main {
-        padding-top: 100px; /* Adjust padding to match smaller header/nav */
+        margin-top: 120px; 
       }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1 class="title">Vusani Nwedo</h1>
-    <h2 class="subtitle">Software Engineer | Aspiring Web Developer</h2>
-  </header>
-
-  <nav>
-    <ul class="navigation">
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="Vusani_Nwedo_CV.pdf" download>Download CV</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    </main>
-</body>
+  </body>
 </html>
