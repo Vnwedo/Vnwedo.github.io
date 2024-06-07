@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ls<!DOCTYPE html>
 <html>
   <head>
     <title>Contact | Vusani Nwedo</title>
@@ -45,6 +45,7 @@
         margin: 0;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
       }
       .navigation li {
         margin: 0 15px;
@@ -57,6 +58,12 @@
       .navigation a:hover {
         text-decoration: underline;
       }
+	
+      @media (max-width: 600px) {
+        .navigation {
+          flex-direction: column;
+        }
+
     </style>
   </head>
   <body>

@@ -33,6 +33,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
+	    flex-wrap: wrap;
         }
 
         .navigation li {
@@ -47,6 +48,11 @@
 
         .navigation a:hover {
             text-decoration: underline;
+        }
+
+	@media (max-width: 600px) {
+        .navigation {
+          flex-direction: column;
         }
 
         /* Styles for the About Me section */

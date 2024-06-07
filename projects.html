@@ -33,6 +33,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .navigation li {
@@ -49,7 +50,11 @@
             text-decoration: underline;
         }
 
-        
+        @media (max-width: 600px) {
+        .navigation {
+          flex-direction: column;
+        }
+
         .about-container {
             display: flex;
             align-items: center;
