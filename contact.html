@@ -1,13 +1,18 @@
-ls<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Contact | Vusani Nwedo</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link href="normalize.css" rel="stylesheet">
+    <link href="locomotive-scroll.css" rel="stylesheet">
+    <link href="styleguide.css" rel="stylesheet">
+    <link href="components.css" rel="stylesheet">
+    <link href="style-new.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="styles.css" />-->
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #03b1e6;
-        color: #333;
+        background-color: #1C1D20; /* Changed background color to match other pages */
+        color: #ffffff; /* Ensure text color contrasts with the background */
         margin: 0;
         padding: 0;
         display: flex;
@@ -32,12 +37,15 @@ ls<!DOCTYPE html>
       }
       nav {
         width: 100%;
-        color: rgb(72, 168, 247);
-        padding: 10px 0;
+        background-color: #1C1D20; /* Changed background color to match other pages */
+        color: #ffffff; /* Ensure text color contrasts with the background */
+        padding: 10px 20px; /* Added padding to the left and right */
         position: fixed;
-	height: auto;
+        height: auto;
         top: 0;
         z-index: 1;
+        display: flex;
+        justify-content: flex-end; /* Align navigation to the top right */
       }
       .navigation {
         list-style: none;
@@ -52,25 +60,23 @@ ls<!DOCTYPE html>
       }
       .navigation a {
         text-decoration: none;
-        color: rgb(0, 0, 0);
+        color: #ffffff; /* Ensure links are visible */
         font-size: 18px;
       }
       .navigation a:hover {
         text-decoration: underline;
       }
-	
       @media (max-width: 600px) {
         .navigation {
           flex-direction: column;
         }
-
+      }
     </style>
   </head>
   <body>
     <nav>
       <ul class="navigation">
         <li><a href="index.html" >Home</a></li>
-        <li><a href="about.html" >About Me</a></li>
         <li><a href="skills.html" >Skills</a></li>
         <li><a href="projects.html" >Projects</a></li>
         <li><a href="contact.html" >Contact</a></li>
@@ -83,6 +89,14 @@ ls<!DOCTYPE html>
       <a href="https://za.linkedin.com/in/vusani-nwedo-38a9361bb" target="_blank">
         <img src="linked_in.jpg" alt="LinkedIn Profile" width="100" height="100">
       </a>
+
+      <a href="https://www.instagram.com/nwedo_v" target="_blank">
+        <img src="icons8-instagram-64.png" alt="LinkedIn Profile" width="100" height="100">
+      </a>
+
+	
+
+      
       <br><br>
     </div>
   </body>

@@ -1,109 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Me | Vusani Nwedo</title>
+    <title>Projects | Vusani Nwedo</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #03b1e6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; 
-        }
-
-        nav {
-            width: 100%;
-            color: rgb(72, 168, 247);
-            padding: 10px 0;
-            position: fixed;
-	    height: auto;
-            top: 0;
-            z-index: 1;
-        }
-
-        .navigation {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .navigation li {
-            margin: 0 15px;
-        }
-
-        .navigation a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-size: 18px;
-        }
-
-        .navigation a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-        .navigation {
-          flex-direction: column;
-        }
-
-        .about-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        .about-text {
-            text-align: left;
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .profile-image {
-            flex: 1;
-            max-width: 200px;
-            border-radius: 50%;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1C1D20; /* Changed background color to match other pages */
+        color: #ffffff; /* Ensure text color contrasts with the background */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .content {
+        max-width: 800px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .project-image {
+        width: 100px;
+        height: 100px;
+      }
+      .project {
+        margin-bottom: 40px;
+      }
+      nav {
+        width: 100%;
+        background-color: #1C1D20; /* Changed background color to match other pages */
+        color: #ffffff; /* Ensure text color contrasts with the background */
+        padding: 10px 20px; /* Adjusted padding for navigation */
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end; /* Align navigation to the top right */
+      }
+      .navigation {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .navigation li {
+        margin: 0 15px;
+      }
+      .navigation a {
+        text-decoration: none;
+        color: #ffffff; /* Ensure links are visible */
+        font-size: 18px;
+      }
+      .navigation a:hover {
+        text-decoration: underline;
+      }
     </style>
 </head>
 <body>
     <nav>
         <ul class="navigation">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="about.html" >About Me</a></li>
-            <li><a href="skills.html" ">Skills</a></li>
-            <li><a href="projects.html" >Projects</a></li>
-            <li><a href="contact.html" >Contact</a></li>
-            <li><a href="Vusani_Nwedo_CV.pdf" >Download CV</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Vusani_Nwedo_CV.pdf">Download CV</a></li>
         </ul>
     </nav>
     <div class="content">
         <h1>Projects</h1>
         <div class="project">
+	    <img src="icons8-website-48.png" alt="Portfolio Website" class="project-image">
             <h3><a href="https://github.com/Vnwedo/Vnwedo.github.io" target="_blank">Portfolio Website</a></h3>
+            
             <p>A responsive portfolio website to showcase my projects and skills. Built with HTML, CSS, and JavaScript.</p>
         </div>
-     
     </div>
 </body>
 </html>
