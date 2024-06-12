@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -21,6 +21,7 @@
       .content {
         max-width: 800px;
         text-align: center;
+        padding-top: 60px; /* Add padding to prevent content overlap with the nav */
       }
       h1 {
         font-size: 36px;
@@ -50,6 +51,7 @@
         margin: 0;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
       }
       .navigation li {
         margin: 0 15px;
@@ -61,6 +63,12 @@
       }
       .navigation a:hover {
         text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        .navigation {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     </style>
 </head>
@@ -79,7 +87,6 @@
         <div class="project">
 	    <img src="icons8-website-48.png" alt="Portfolio Website" class="project-image">
             <h3><a href="https://github.com/Vnwedo/Vnwedo.github.io" target="_blank">Portfolio Website</a></h3>
-            
             <p>A responsive portfolio website to showcase my projects and skills. Built with HTML, CSS, and JavaScript.</p>
         </div>
     </div>
