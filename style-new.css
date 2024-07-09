@@ -110,6 +110,8 @@ main.touch .main-wrap {
    will-change: height;
 }
 
+
+
 .loading-container .loading-words {
    position: absolute;
    top: 50%;
