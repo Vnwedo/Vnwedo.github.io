@@ -80,9 +80,11 @@
         text-decoration: none;
         color: #ffffff; /* Ensure links are visible */
         font-size: 18px;
+        cursor: pointer; /* Cursor pointer to indicate clickable links */
+        transition: color 0.3s ease-in-out; /* Smooth color transition */
       }
       .navigation a:hover {
-        text-decoration: underline;
+        color: #d4af37; /* Change color on hover */
       }
       @media (max-width: 600px) {
         .navigation {
@@ -90,6 +92,16 @@
           flex-direction: column;
           align-items: center;
         }
+      }
+      .project a {
+        text-decoration: none;
+        color: #ffffff; /* Link color */
+        font-size: 24px;
+        cursor: pointer; /* Cursor pointer to indicate clickable links */
+        transition: color 0.3s ease-in-out; /* Smooth color transition */
+      }
+      .project a:hover {
+        color: #d4af37; /* Change color on hover */
       }
     </style>
 </head>
@@ -100,7 +112,6 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
-        
       </ul>
     </nav>
     <div class="content">
@@ -136,7 +147,8 @@
         I have worked on several projects that involved building websites and web applications. My experience includes developing responsive interfaces and integrating APIs.
       </p>
 
-	<li><a href="Vusani_Nwedo_CV.pdf" target="_blank" download>Download CV</a></li>
+      <h2>CV</h2>
+      <p><a href="Vusani_Nwedo_CV.pdf" target="_blank">View CV</a></p>
     </div>
   </body>
 </html>
