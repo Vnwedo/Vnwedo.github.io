@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #1C1D20; /* Match background color of index page */
-        color: #ffffff; /* Ensure text color contrasts with the background */
+        font-family: 'Arial', sans-serif;
+        background-color: #1C1D20; /* Consistent background color */
+        color: #FFFFFF; /* Consistent text color for visibility */
         margin: 0;
         padding: 0;
         display: flex;
@@ -56,62 +56,59 @@
         font-size: 18px;
       }
       nav {
+        background-color: #1C1D20;
         width: 100%;
-        background-color: #1C1D20; /* Match background color of index page */
-        padding: 10px 20px; /* Add padding to the left and right */
         position: fixed;
         top: 0;
-        z-index: 1;
+        z-index: 1000;
+        padding: 10px 20px;
         display: flex;
-        justify-content: flex-end; /* Align navigation to the top right */
+        justify-content: space-between;
+        align-items: center;
       }
       .navigation {
         list-style: none;
-        padding: 0;
         margin: 0;
+        padding: 0;
         display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
       }
       .navigation li {
-        margin: 0 15px;
+        margin: 0 10px;
       }
       .navigation a {
         text-decoration: none;
-        color: #ffffff; /* Ensure links are visible */
+        color: #FFFFFF;
         font-size: 18px;
-        cursor: pointer; /* Cursor pointer to indicate clickable links */
-        transition: color 0.3s ease-in-out; /* Smooth color transition */
+        transition: color 0.3s;
+        aria-label: "Navigation Link";
       }
       .navigation a:hover {
-        color: #d4af37; /* Change color on hover */
+        color: #ADD8E6; /* Change to light blue on hover */
+      }
+      a {
+        color: #FFFFFF; /* Default link color */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #ADD8E6; /* Change to light blue on hover */
+        text-decoration: underline; /* Optionally add underline on hover */
       }
       @media (max-width: 600px) {
         .navigation {
-          justify-content: center; /* Center navigation for smaller screens */
           flex-direction: column;
-          align-items: center;
         }
-      }
-      .project a {
-        text-decoration: none;
-        color: #ffffff; /* Link color */
-        font-size: 24px;
-        cursor: pointer; /* Cursor pointer to indicate clickable links */
-        transition: color 0.3s ease-in-out; /* Smooth color transition */
-      }
-      .project a:hover {
-        color: #d4af37; /* Change color on hover */
       }
     </style>
 </head>
 <body>
     <nav>
       <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" aria-label="Home">Home</a></li>
+        <li><a href="skills.html" aria-label="Skills">Skills</a></li>
+        <li><a href="projects.html" aria-label="Projects">Projects</a></li>
+        <li><a href="contact.html" aria-label="Contact">Contact</a></li>
       </ul>
     </nav>
     <div class="content">
@@ -146,7 +143,6 @@
       <p>
         I have worked on several projects that involved building websites and web applications. My experience includes developing responsive interfaces and integrating APIs.
       </p>
-
       <h2>CV</h2>
       <p><a href="Vusani_Nwedo_CV.pdf" target="_blank">View CV</a></p>
     </div>
