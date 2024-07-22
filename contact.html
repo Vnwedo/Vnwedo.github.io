@@ -4,22 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Projects | Vusani Nwedo</title>
+  <title>Contact | Vusani Nwedo</title>
   <link href="normalize.css" rel="stylesheet">
   <link href="locomotive-scroll.css" rel="stylesheet">
   <link href="styleguide.css" rel="stylesheet">
   <link href="components.css" rel="stylesheet">
   <link href="style-new.css" rel="stylesheet">
   <style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+    /* Additional CSS to style the contact section and icons */
+    .contact .content {
+      text-align: center;
+      padding: 20px;
     }
-    .main, .main-wrap {
-        min-height: 100vh;  /* 100% of the viewport height */
-        width: 100%;
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between icons */
+      padding: 20px 0;
+    }
+
+    .icon-wrapper {
+      display: inline-block;
+    }
+
+    .icon {
+      width: 50px; /* Set a fixed size for the icons */
+      height: 50px; /* Maintain aspect ratio */
+      object-fit: contain; /* Ensure the image fits within the set dimensions */
     }
   </style>
 </head>
@@ -36,11 +48,6 @@
         <div class="row nav-row">
           <h5>Navigation</h5>
           <div class="stripe"></div>
-          
-        </div>
-        
-          
-          
         </div>
       </div>
     </div>
@@ -87,10 +94,29 @@
             </ul>
           </div>
         </div>
-        
       </section>
+
+      <!-- New Content Section -->
+      <section class="section contact" style="background-color: #1C1D20; color: #FFFFFF;">
+        <div class="content">
+          <p>Click on one of the following to contact me:</p>
+          <div class="icon-container">
+            <a href="https://za.linkedin.com/in/vusani-nwedo-38a9361bb" target="_blank" class="icon-wrapper">
+              <img src="linked_in.jpg" alt="LinkedIn Profile" class="icon">
+            </a>
+            <a href="https://github.com/Vnwedo" target="_blank" class="icon-wrapper">
+              <img src="icons8-github-64.png" alt="Github Profile" class="icon">
+            </a>
+            <a href="https://www.instagram.com/nwedo_v" target="_blank" class="icon-wrapper">
+              <img src="icons8-instagram-64.png" alt="Instagram Profile" class="icon">
+            </a>
+          </div>
+        </div>
+      </section>
+      
     </div>
   </main>
+   
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
