@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  This site was created by Vusani Nwedo (Code by Vusi)  -->
+<!-- This site was created by Vusani Nwedo (Code by Vusi) -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -10,31 +10,40 @@
   <link href="styleguide.css" rel="stylesheet">
   <link href="components.css" rel="stylesheet">
   <link href="style-new.css" rel="stylesheet">
-  <style>
-    /* Additional CSS to style the contact section and icons */
-    .contact .content {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .icon-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px; /* Space between icons */
-      padding: 20px 0;
-    }
-
-    .icon-wrapper {
-      display: inline-block;
-    }
-
-    .icon {
-      width: 50px; /* Set a fixed size for the icons */
-      height: 50px; /* Maintain aspect ratio */
-      object-fit: contain; /* Ensure the image fits within the set dimensions */
-    }
-  </style>
+   <style>
+  html, body {
+    height: 100%; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+  }
+  .icon-wrapper {
+    display: inline-block;
+    background-color: #f4f4f4; /* Consistent background color for icons */
+    padding: 10px; /* Padding around icons */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  .icon, .icon.linkedin {
+    width: 80px; /* Increased size for icons */
+    height: 80px; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within dimensions */
+  }
+  
+</style>
 </head>
+
 <body data-barba="wrapper">
   <main class="main" id="home" data-barba="container" data-barba-namespace="home">
     <div class="overlay fixed-nav-back"></div>
@@ -79,9 +88,7 @@
               </li>
               <li class="btn btn-link">
                 <a href="contact.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
-                  <span class="btn-text">
-                    <span class="btn-text-inner">Contact</span>
-                  </span>
+                  <span the="btn-text-inner">Contact</span>
                 </a>
               </li>
               <li class="btn btn-link btn-menu">
@@ -94,10 +101,6 @@
             </ul>
           </div>
         </div>
-      </section>
-
-      <!-- New Content Section -->
-      <section class="section contact" style="background-color: #1C1D20; color: #FFFFFF;">
         <div class="content">
           <p>Click on one of the following to contact me:</p>
           <div class="icon-container">
@@ -113,15 +116,12 @@
           </div>
         </div>
       </section>
-      
     </div>
   </main>
-   
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
   <script src="locomotive-scroll.min.js"></script>
   <script defer src="index-new.js"></script>
 </body>

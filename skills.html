@@ -11,59 +11,54 @@
   <link href="components.css" rel="stylesheet">
   <link href="style-new.css" rel="stylesheet">
   <style>
+    html, body {
+      height: 100%; /* Ensure the body takes full viewport height */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      overflow: hidden; /* Hide overflow to prevent scrolling */
+    }
+    .main-wrap {
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Distribute space between sections */
+      align-items: center;
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center;
+    }
     .skills-list {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      flex-direction: row; /* Align items horizontally */
+      justify-content: center; /* Center items horizontally */
       list-style-type: none;
       padding: 0;
-      margin: -150;
+      margin: -50px 0; /* Provide some space above and below the list */
     }
     .skills-list li {
+      margin: 0 10px; /* Space out the icons horizontally */
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: -300px;
+      text-align: center; /* Ensure text is centered under icons */
     }
     .skills-list img {
-      width: 96px;
+      width: 96px; /* Control the size of the icons */
       height: 96px;
-      margin-bottom: -10px;
-    }
-    .skills-list span {
-      font-size: 1rem;
-      color: #FFFFFF; /* Ensure this contrasts with background */
+      margin-bottom: 10px; /* Space between the icon and the text */
     }
     .content {
-      padding: 0px;
-     
+      padding: 50px 5px; /* Reduce padding to save space */
+      text-align: center; /* Ensure text content is centered */
     }
-    .content h1,
-    .content h2 {
-      color: #FFFFFF; /* Ensure this contrasts with background */
-    }
-    .content p {
-      margin: 15px 0;
-      line-height: 1.6;
-      color: #FFFFFF; /* Ensure this contrasts with background */
-    }
-    .content a {
-      color: #1E90FF; /* Example color for links */
-      text-decoration: underline;
-    }
-    .content a:hover {
-      text-decoration: none;
-    }
-    .content a.cv-link {
-      color: #ADD8E6; /* Light blue color */
-      font-weight: bold;
-      text-decoration: none; /* Remove underline */
-    }
-    .content a.cv-link:hover {
-      text-decoration: none;
-    }
-    .main-wrap {
-      margin-top: -20px; /* Move content up by 20px */
+    .fixed-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -121,37 +116,34 @@
                   <div class="btn-text">
                     <span class="btn-text-inner">Menu</span>
                   </div>
-                </div>
+                </a>
               </li>
             </ul>
           </div>
         </div>
-      </section>
-      <!-- Add new content here -->
-      <section class="section theme-light" data-scroll-section>
+        <ul class="skills-list">
+          <li>
+            <img src="icons8-html-96.png" alt="HTML">
+            <span>HTML</span>
+          </li>
+          <li>
+            <img src="icons8-css-96.png" alt="CSS">
+            <span>CSS</span>
+          </li>
+          <li>
+            <img src="icons8-javascript-96.png" alt="JavaScript">
+            <span>JavaScript</span>
+          </li>
+          <li>
+            <img src="icons8-java-96.png" alt="Java">
+            <span>Java</span>
+          </li>
+          <li>
+            <img src="icons8-python-96.png" alt="Python">
+            <span>Python</span>
+          </li>
+        </ul>
         <div class="content">
-          <ul class="skills-list">
-            <li>
-              <img src="icons8-html-96.png" alt="HTML">
-              <span>HTML</span>
-            </li>
-            <li>
-              <img src="icons8-css-96.png" alt="CSS">
-              <span>CSS</span>
-            </li>
-            <li>
-              <img src="icons8-javascript-96.png" alt="JavaScript">
-              <span>JavaScript</span>
-            </li>
-            <li>
-              <img src="icons8-java-96.png" alt="Java">
-              <span>Java</span>
-            </li>
-            <li>
-              <img src="icons8-python-96.png" alt="Python">
-              <span>Python</span>
-            </li>
-          </ul>
           <h2>Interests</h2>
           <p>
             I am particularly interested in front-end development, user experience design, and data visualization. I enjoy working on projects that challenge me to think creatively and solve complex problems.
@@ -164,14 +156,12 @@
           <p><a href="Vusani_Nwedo_CV.pdf" class="cv-link" target="_blank">View CV</a></p>
         </div>
       </section>
-      <!-- End of new content -->
     </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
   <script src="locomotive-scroll.min.js"></script>
   <script defer src="index-new.js"></script>
 </body>
