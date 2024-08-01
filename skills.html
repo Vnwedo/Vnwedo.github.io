@@ -1,35 +1,17 @@
 <!DOCTYPE html>
-<!-- This site was created by Vusani Nwedo (Code by Vusi) -->
+<!--  This site was created by Vusani Nwedo (Code by Vusi)  -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Skills | Vusani Nwedo</title>
-  <link href="normalize.css" rel="stylesheet">
+  
   <link href="locomotive-scroll.css" rel="stylesheet">
   <link href="styleguide.css" rel="stylesheet">
   <link href="components.css" rel="stylesheet">
   <link href="style-new.css" rel="stylesheet">
+  
   <style>
-    html, body {
-      height: 100%; /* Ensure the body takes full viewport height */
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-      overflow: hidden; /* Hide overflow to prevent scrolling */
-    }
-    .main-wrap {
-      height: 100vh; /* Full viewport height */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; /* Distribute space between sections */
-      align-items: center;
-    }
-    .section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* Center content vertically */
-      align-items: center;
-    }
     .skills-list {
       display: flex;
       flex-direction: row; /* Align items horizontally */
@@ -50,34 +32,24 @@
       height: 96px;
       margin-bottom: 10px; /* Space between the icon and the text */
     }
-    .content {
-      padding: 50px 5px; /* Reduce padding to save space */
-      text-align: center; /* Ensure text content is centered */
+
+    .spacing {
+      margin-top: 80px; /* Adjust this value to control the distance */
     }
-    .fixed-nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
+
+    a {
+      cursor: pointer;
+      color: #FFFFFF; /* Default link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    a:hover {
+      color: #ADD8E6; /* Change to desired hover color */
     }
   </style>
 </head>
 <body data-barba="wrapper">
   <main class="main" id="home" data-barba="container" data-barba-namespace="home">
-    <div class="overlay fixed-nav-back"></div>
-    <div class="fixed-nav theme-dark">
-      <div class="fixed-nav-rounded-div">
-        <div class="rounded-div-wrap">
-          <div class="rounded-div"></div>
-        </div>
-      </div>
-      <div class="fixed-nav-inner">
-        <div class="row nav-row">
-          <h5>Navigation</h5>
-          <div class="stripe"></div>
-        </div>
-      </div>
-    </div>
     <div class="main-wrap" data-scroll-container>
       <section class="section theme-dark" data-scroll-section style="background-color: #1C1D20; color: #FFFFFF;">
         <div class="overlay get-height once-in once-in-secondary">
@@ -116,7 +88,7 @@
                   <div class="btn-text">
                     <span class="btn-text-inner">Menu</span>
                   </div>
-                </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -143,17 +115,24 @@
             <span>Python</span>
           </li>
         </ul>
-        <div class="content">
-          <h2>Interests</h2>
-          <p>
-            I am particularly interested in front-end development, user experience design, and data visualization. I enjoy working on projects that challenge me to think creatively and solve complex problems.
-          </p>
-          <h2>Experience</h2>
-          <p>
-            I have worked on several projects that involved building websites and web applications. My experience includes developing responsive interfaces and integrating APIs.
-          </p>
-          <h2>CV</h2>
-          <p><a href="Vusani_Nwedo_CV.pdf" class="cv-link" target="_blank">View CV</a></p>
+        <div class="container medium spacing"> <!-- Added spacing class here -->
+          <div class="row">
+            <div class="flex-col">
+              <div class="text-wrap fade-in animate">
+                <div class="project">
+                  <h2>Interests</h2>
+                  <p>
+                    I am particularly interested in front-end development, user experience design, and data visualization. I enjoy working on projects that challenge me to think creatively and solve complex problems.
+                  </p>
+                  <h2>Experience</h2>
+                  <p>
+                    I have worked on several projects that involved building websites and web applications. My experience includes developing responsive interfaces and integrating APIs.
+                  </p>
+                  <h3><a href="Vusani_Nwedo_CV.pdf" target="_blank">View CV</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -162,6 +141,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+  
   <script src="locomotive-scroll.min.js"></script>
   <script defer src="index-new.js"></script>
 </body>
