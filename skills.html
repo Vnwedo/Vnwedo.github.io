@@ -48,23 +48,37 @@
     }
 
     @media (max-width: 768px) {
-  .nav-bar {
-    position: relative; /* Change or set position */
-    z-index: 1000; /* Higher z-index means it will be on top of other content */
-    width: 100%; /* Ensure it spans the full width */
+  .btn-hamburger {
+    display: block; /* Show hamburger icon */
+    position: fixed; /* Fix position to the top */
+    top: 0;
+    right: 0;
+    z-index: 1000; /* High z-index to ensure it's above other elements */
+    padding: 15px; /* Padding for easier tapping */
   }
-  .links-wrap {
-    display: none; /* Initially hide the menu */
+
+  .btn-bars {
+    display: block; /* This represents the hamburger icon lines */
+    width: 35px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s; /* Smooth transition for animation */
+  }
+
+  .fixed-nav {
+    position: fixed;
     width: 100%; /* Full width */
-    background-color: #1C1D20; /* Background color for visibility */
+    height: 100vh; /* Full viewport height */
+    left: -100%; /* Start off-screen */
+    top: 0;
+    background: rgba(0,0,0,0.9); /* Semi-transparent background */
+    z-index: 999; /* Below the hamburger button */
+    transition: left 0.3s; /* Transition for sliding in */
   }
-  .btn-menu {
-    display: block; /* Ensure the menu button is always visible */
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-  }
-  .skills-list {
-    z-index: 1; /* Lower z-index than the nav-bar */
-    position: relative; /* Ensure positioning context */
+
+  .fixed-nav.active {
+    left: 0; /* Bring into view */
   }
 }
   </style>
