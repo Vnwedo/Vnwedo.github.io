@@ -46,6 +46,22 @@
     a:hover {
       color: #ADD8E6; /* Change to desired hover color */
     }
+
+    @media (max-width: 768px) {
+  .nav-bar {
+    display: block; /* Ensure the navigation bar is displayed */
+    background-color: #1C1D20; /* Add a background color for visibility */
+    text-align: center; /* Center the navigation links */
+  }
+  .links-wrap {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    padding: 20px 0; /* Add padding for tap targets */
+  }
+  .btn-text-inner {
+    display: block; /* Make sure text is visible */
+  }
+}
   </style>
 </head>
 <body data-barba="wrapper">
