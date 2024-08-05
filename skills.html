@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Skills | Vusani Nwedo</title>
+  <title>Vusani Nwedo • Aspiring Web Developer</title>
   <link href="normalize.css" rel="stylesheet">
   <link href="locomotive-scroll.css" rel="stylesheet">
   <link href="styleguide.css" rel="stylesheet">
@@ -12,25 +12,6 @@
   <link href="style-new.css" rel="stylesheet">
   
 </head>
-
-<style>
-.skills-list {
-      display: flex;
-      flex-direction: row; /* Align items horizontally */
-      justify-content: center; /* Center items horizontally */
-      list-style-type: none;
-      padding: 0;
-      margin: -50px 0; /* Provide some space above and below the list */
-    }
-    .skills-list li {
-      margin: 0 10px; /* Space out the icons horizontally */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center; /* Ensure text is centered under icons */
-    }
-</style>
-
 <body data-barba="wrapper">
   <main class="main" id="home" data-barba="container" data-barba-namespace="home">
     <div class="btn btn-hamburger">
@@ -117,6 +98,37 @@
     </div>
     <div class="main-wrap" data-scroll-container>
       <header class="section home-header theme-dark" data-scroll-section>
+        <div class="overlay personal-image no-select once-in" data-scroll data-scroll-speed="-3" data-scroll-position="top">
+          <img src="my_profile_picture.jpg" alt="Vusani Nwedo, an aspiring web developer">
+        </div>
+        <div class="overlay get-height once-in once-in-secondary">
+          <div class="hanger">
+            <p><span>Located </span><span>in </span><span>Johannesburg, South Africa</span></p>
+            <svg width="300px" height="121px" viewBox="0 0 300 121" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <title>Combined Shape</title>
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(0.000000, -366.000000)" fill="#1C1D20">
+                  <g transform="translate(149.816828, 426.633657) rotate(90.000000) translate(-149.816828, -426.633657) translate(89.816828, 276.816828)">
+                    <g transform="translate(60.000000, 149.816828) rotate(-90.000000) translate(-60.000000, -149.816828) translate(-89.816828, 89.816828)">
+                      <path d="M239.633657,0 C272.770742,1.0182436e-15 299.633657,26.862915 299.633657,60 C299.633657,93.137085 272.770742,120 239.633657,120 L0,120 L0,0 L239.633657,0 Z M239.633657,18.7755102 C216.866,18.7755102 198.409167,37.232343 198.409167,60 C198.409167,82.767657 216.866,101.22449 239.633657,101.22449 C262.401314,101.22449 280.858147,82.767657 280.858147,60 C280.858147,37.232343 262.401314,18.7755102 239.633657,18.7755102 Z"></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <div class="digital-ball">
+              <div class="overlay"></div>
+              <div class="globe">
+                <div class="globe-wrap">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle-hor"></div>
+                  <div class="circle-hor-middle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="nav-bar">
           <ul class="links-wrap">
@@ -150,47 +162,15 @@
             </li>
           </ul>
         </div>
-        <ul class="skills-list">
-          <li>
-            <img src="icons8-html-96.png" alt="HTML">
-            <span>HTML</span>
-          </li>
-          <li>
-            <img src="icons8-css-96.png" alt="CSS">
-            <span>CSS</span>
-          </li>
-          <li>
-            <img src="icons8-javascript-96.png" alt="JavaScript">
-            <span>JavaScript</span>
-          </li>
-          <li>
-            <img src="icons8-java-96.png" alt="Java">
-            <span>Java</span>
-          </li>
-          <li>
-            <img src="icons8-python-96.png" alt="Python">
-            <span>Python</span>
-          </li>
-        </ul>
-         <div class="container medium spacing"> <!-- Added spacing class here -->
-          <div class="row">
-            <div class="flex-col">
-              <div class="text-wrap fade-in animate">
-                <div class="project">
-                  <h2>Interests</h2>
-                  <p>
-                    I am particularly interested in front-end development, user experience design, and data visualization. I enjoy working on projects that challenge me to think creatively and solve complex problems.
-                  </p>
-                  <h2>Experience</h2>
-                  <p>
-                    I have worked on several projects that involved building websites and web applications. My experience includes developing responsive interfaces and integrating APIs.
-                  </p>
-                  <h3><a href="Vusani_Nwedo_CV.pdf" target="_blank">View CV</a></h3>
-                </div>
-              </div>
+        
+        <div class="big-name">
+          <div class="name-h1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4" data-scroll-position="top">
+            <div class="name-wrap">
+              <h1 class="no-select once-in once-in-secondary">Vusani Nwedo<span class="spacer">—</span></h1>
             </div>
           </div>
         </div>
+        <div class="white-block"></div>
       </header>
       
     </div>
@@ -201,6 +181,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
+  
   <script defer src="index-new.js"></script>
 </body>
 </html>
