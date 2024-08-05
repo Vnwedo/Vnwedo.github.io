@@ -47,44 +47,93 @@
       color: #ADD8E6; /* Change to desired hover color */
     }
 
-    @media (max-width: 768px) {
-  .btn-hamburger {
-    display: block; /* Show hamburger icon */
-    position: fixed; /* Fix position to the top */
-    top: 0;
-    right: 0;
-    z-index: 1000; /* High z-index to ensure it's above other elements */
-    padding: 15px; /* Padding for easier tapping */
-  }
-
-  .btn-bars {
-    display: block; /* This represents the hamburger icon lines */
-    width: 35px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 6px 0;
-    transition: 0.4s; /* Smooth transition for animation */
-  }
-
-  .fixed-nav {
-    position: fixed;
-    width: 100%; /* Full width */
-    height: 100vh; /* Full viewport height */
-    left: -100%; /* Start off-screen */
-    top: 0;
-    background: rgba(0,0,0,0.9); /* Semi-transparent background */
-    z-index: 999; /* Below the hamburger button */
-    transition: left 0.3s; /* Transition for sliding in */
-  }
-
-  .fixed-nav.active {
-    left: 0; /* Bring into view */
-  }
-}
+    
   </style>
 </head>
 <body data-barba="wrapper">
   <main class="main" id="home" data-barba="container" data-barba-namespace="home">
+    <div class="btn btn-hamburger">
+      <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
+        <div class="btn-fill"></div>
+        <div class="btn-text">
+          <div class="btn-bars"></div>
+          <span class="btn-text-inner">Menu</span>
+        </div>
+      </div>
+    </div>
+    <div class="overlay fixed-nav-back"></div>
+    <div class="fixed-nav theme-dark">
+      <div class="fixed-nav-rounded-div">
+        <div class="rounded-div-wrap">
+          <div class="rounded-div"></div>
+        </div>
+      </div>
+      <div class="fixed-nav-inner">
+        <div class="row nav-row">
+          <h5>Navigation</h5>
+          <div class="stripe"></div>
+          <ul class="links-wrap">
+            <li class="btn btn-link active">
+              <a href="index.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                <span class="btn-text">
+                  <span class="btn-text-inner">Home</span>
+                </span>
+              </a>
+            </li>
+            <li class="btn btn-link">
+              <a href="skills.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                <span class="btn-text">
+                  <span class="btn-text-inner">Skills</span>
+                </span>
+              </a>
+            </li>
+            <li class="btn btn-link">
+              <a href="projects.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                <span class="btn-text">
+                  <span class="btn-text-inner">Projects</span>
+                </span>
+              </a>
+            </li>
+            <li class="btn btn-link">
+              <a href="contact.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                <span class="btn-text">
+                  <span class="btn-text-inner">Contact</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row social-row">
+          <div class="stripe"></div>
+          <div class="socials">
+            <h5>Socials</h5>
+            <ul>
+              <li class="btn btn-link btn-link-external">
+                <a href="https://www.instagram.com/nwedo_v/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                  <span class="btn-text">
+                    <span class="btn-text-inner">Instagram</span>
+                  </span>
+                </a>
+              </li>
+              <li class="btn btn-link btn-link-external">
+                <a href="https://www.linkedin.com/in/vusani-nwedo-38a9361bb/" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                  <span class="btn-text">
+                    <span class="btn-text-inner">LinkedIn</span>
+                  </span>
+                </a>
+              </li>
+              <li class="btn btn-link btn-link-external">
+                <a href="https://github.com/Vnwedo" target="_blank" class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                  <span class="btn-text">
+                    <span class="btn-text-inner">Github</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="main-wrap" data-scroll-container>
       <section class="section theme-dark" data-scroll-section style="background-color: #1C1D20; color: #FFFFFF;">
         <div class="overlay get-height once-in once-in-secondary">
