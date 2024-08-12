@@ -10,7 +10,42 @@
   <link href="styleguide.css" rel="stylesheet">
   <link href="components.css" rel="stylesheet">
   <link href="style-new.css" rel="stylesheet">
-  
+   <style>
+    .skills-list {
+      display: flex;
+      flex-direction: row; /* Align items horizontally */
+      justify-content: center; /* Center items horizontally */
+      list-style-type: none;
+      padding: 0;
+      margin: 150px 0; /* Provide some space above and below the list */
+    }
+    .skills-list li {
+      margin: 0 10px; /* Space out the icons horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; /* Ensure text is centered under icons */
+    }
+    .skills-list img {
+      width: 96px; /* Control the size of the icons */
+      height: 96px;
+      margin-bottom: 10px; /* Space between the icon and the text */
+    }
+
+    .spacing {
+      margin-top: 80px; /* Adjust this value to control the distance */
+    }
+
+    a {
+      cursor: pointer;
+      color: #FFFFFF; /* Default link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    a:hover {
+      color: #ADD8E6; /* Change to desired hover color */
+    }
+  </style>
 </head>
 <body data-barba="wrapper">
   <main class="main" id="home" data-barba="container" data-barba-namespace="home">
@@ -134,7 +169,50 @@
             </li>
           </ul>
         </div>
-        
+      
+        <ul class="skills-list">
+          <li>
+            <img src="icons8-html-96.png" alt="HTML">
+            <span>HTML</span>
+          </li>
+          <li>
+            <img src="icons8-css-96.png" alt="CSS">
+            <span>CSS</span>
+          </li>
+          <li>
+            <img src="icons8-javascript-96.png" alt="JavaScript">
+            <span>JavaScript</span>
+          </li>
+          <li>
+            <img src="icons8-java-96.png" alt="Java">
+            <span>Java</span>
+          </li>
+          <li>
+            <img src="icons8-python-96.png" alt="Python">
+            <span>Python</span>
+          </li>
+        </ul>
+      <div class="container medium spacing"> <!-- Added spacing class here -->
+          <div class="row">
+            <div class="flex-col">
+              <div class="text-wrap fade-in animate">
+                <div class="project">
+                  <h2>Interests</h2>
+                  <p>
+                    I am particularly interested in front-end development, user experience design, and data visualization. I enjoy working on projects that challenge me to think creatively and solve complex problems.
+                  </p>
+                  <h2>Experience</h2>
+                  <p>
+                    I have worked on several projects that involved building websites and web applications. My experience includes developing responsive interfaces and integrating APIs.
+                  </p>
+                  <h3><a href="Vusani_Nwedo_CV.pdf" target="_blank">View CV</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>  
       </header>
       <section class="section home-intro" data-scroll-section style="background-color: #1C1D20; color: #FFFFFF;">
        

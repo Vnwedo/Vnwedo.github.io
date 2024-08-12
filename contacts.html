@@ -10,7 +10,35 @@
   <link href="styleguide.css" rel="stylesheet">
   <link href="components.css" rel="stylesheet">
   <link href="style-new.css" rel="stylesheet">
-  
+  <style>
+    /* Add this CSS block */
+    a {
+      cursor: pointer;
+      color: #FFFFFF; /* Default link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    a:hover {
+      color: #ADD8E6; /* Change to desired hover color */
+    }
+
+    .icon-wrapper {
+      display: inline-block;
+      width: 90px; /* Adjust size as needed */
+      height: 90px; /* Adjust size as needed */
+      background-color: #ffffff; /* Background color */
+      border-radius: 30px; /* Optional: to make the background slightly rounded */
+      padding: 10px; /* Padding inside the square background */
+      margin: 5px; /* Space between icons */
+      text-align: center; /* Center the icon inside the wrapper */
+      box-sizing: border-box;
+    }
+
+    .icon {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
 </head>
 <body data-barba="wrapper">
   <main class="main" id="home" data-barba="container" data-barba-namespace="home">
@@ -50,7 +78,7 @@
               </a>
             </li>
             <li class="btn btn-link">
-              <a href="project.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+              <a href="projects.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                 <span class="btn-text">
                   <span class="btn-text-inner">Projects</span>
                 </span>
@@ -98,40 +126,19 @@
     </div>
     <div class="main-wrap" data-scroll-container>
       <header class="section home-header theme-dark" data-scroll-section>
-        <div class="overlay personal-image no-select once-in" data-scroll data-scroll-speed="-3" data-scroll-position="top">
-          <img src="my_profile_picture.jpg" alt="Vusani Nwedo, an aspiring web developer">
-        </div>
+       
         <div class="overlay get-height once-in once-in-secondary">
-          <div class="hanger">
-            <p><span>Located </span><span>in </span><span>Johannesburg, South Africa</span></p>
-            <svg width="300px" height="121px" viewBox="0 0 300 121" version="1.1" xmlns="http://www.w3.org/2000/svg">
-              <title>Combined Shape</title>
-              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g transform="translate(0.000000, -366.000000)" fill="#1C1D20">
-                  <g transform="translate(149.816828, 426.633657) rotate(90.000000) translate(-149.816828, -426.633657) translate(89.816828, 276.816828)">
-                    <g transform="translate(60.000000, 149.816828) rotate(-90.000000) translate(-60.000000, -149.816828) translate(-89.816828, 89.816828)">
-                      <path d="M239.633657,0 C272.770742,1.0182436e-15 299.633657,26.862915 299.633657,60 C299.633657,93.137085 272.770742,120 239.633657,120 L0,120 L0,0 L239.633657,0 Z M239.633657,18.7755102 C216.866,18.7755102 198.409167,37.232343 198.409167,60 C198.409167,82.767657 216.866,101.22449 239.633657,101.22449 C262.401314,101.22449 280.858147,82.767657 280.858147,60 C280.858147,37.232343 262.401314,18.7755102 239.633657,18.7755102 Z"></path>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-            <div class="digital-ball">
-              <div class="overlay"></div>
-              <div class="globe">
-                <div class="globe-wrap">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle-hor"></div>
-                  <div class="circle-hor-middle"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          
 
         <div class="nav-bar">
           <ul class="links-wrap">
+          <li class="btn btn-link">
+              <a href="index.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+                <span class="btn-text">
+                  <span class="btn-text-inner">Home</span>
+                </span>
+              </a>
+            </li>
             <li class="btn btn-link">
               <a href="skills.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                 <span class="btn-text">
@@ -140,7 +147,7 @@
               </a>
             </li>
             <li class="btn btn-link">
-              <a href="project.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
+              <a href="projects.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
                 <span class="btn-text">
                   <span class="btn-text-inner">Projects</span>
                 </span>
@@ -163,24 +170,24 @@
           </ul>
         </div>
         
-        <div class="big-name">
-          <div class="name-h1" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4" data-scroll-position="top">
-            <div class="name-wrap">
-              <h1 class="no-select once-in once-in-secondary">Vusani Nwedo<span class="spacer">—</span></h1>
-            </div>
-          </div>
-        </div>
-        <div class="white-block"></div>
       </header>
       <section class="section home-intro" data-scroll-section style="background-color: #1C1D20; color: #FFFFFF;">
-        <div class="container medium">
+       <div class="container medium">
           <div class="row">
             <div class="flex-col">
-              <h4 class="span-lines animate">Hello! I'm Vusani Nwedo, a passionate aspiring web developer. I have a strong interest in creating dynamic and responsive web applications.</h4>
-            </div>
-            <div class="flex-col">
               <div class="text-wrap fade-in animate">
-                <p>My goal is to become a proficient full-stack developer and contribute to innovative projects that make a difference.</p>
+                 <p>Click on one of the following to contact me:</p>
+                <div class="project">
+                  <a href="https://za.linkedin.com/in/vusani-nwedo-38a9361bb" target="_blank" class="icon-wrapper">
+                    <img src="linked_in.jpg" alt="LinkedIn Profile" class="icon">
+                  </a>
+                  <a href="https://github.com/Vnwedo" target="_blank" class="icon-wrapper">
+                    <img src="icons8-github-64.png" alt="Github Profile" class="icon">
+                  </a>
+                  <a href="https://www.instagram.com/nwedo_v" target="_blank" class="icon-wrapper">
+                    <img src="icons8-instagram-64.png" alt="Instagram Profile" class="icon">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
